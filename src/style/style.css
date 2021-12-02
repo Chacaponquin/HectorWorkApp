@@ -1,0 +1,225 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+:root {
+    --green-color: #5cb85c;
+    --danger-color: #d9534f;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 30px 50px 0px 50px;
+    pointer-events: none;
+}
+
+.navBar>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navBar p {
+    font-weight: 600;
+    letter-spacing: 2;
+    font-size: 22px;
+}
+
+.showCard-button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    pointer-events: all;
+}
+
+.addWork-card {
+    position: absolute;
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.603);
+    border-radius: 6px;
+    padding: 15px 20px;
+    background-color: white;
+    width: 300px;
+    pointer-events: all;
+}
+
+.addWork-card>form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.addWork-card p {
+    margin-bottom: 7px;
+    font-size: 17px;
+    align-self: flex-start;
+}
+
+.subWorks-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.workName,
+.day,
+.subWorks-container input,
+.addWork-card textarea {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: thin solid gray;
+    border: none;
+    padding: 5px 10px;
+    transition: 0.4s ease all;
+    width: 100%;
+    font-size: 11px;
+    font-weight: 600;
+    resize: none;
+}
+
+.addWork-card input:focus,
+.addWork-card textarea:focus {
+    outline: 3px solid gray;
+}
+
+.subWork-button,
+.formSubmit {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subWork-button {
+    background-color: black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 5px;
+    font-size: 13px;
+}
+
+.formSubmit {
+    background-color: var(--green-color);
+}
+
+.works-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.workToDo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 40px;
+    transition: 2s ease all;
+    border-radius: 12px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: thin solid black;
+}
+
+.workInf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.workInf>div {
+    display: flex;
+    align-items: center;
+}
+
+.buttonSection {
+    height: 100%;
+}
+
+.workToDo h1 {
+    font-size: 25px;
+}
+
+.workInf p {
+    color: inherit;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.check,
+.trash {
+    fill: white;
+}
+
+.workButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.workButton svg {
+    width: 40px;
+    height: 40px;
+    margin: 0px 15px;
+}
+
+.description {
+    font-size: 16px;
+    color: inherit;
+}
+
+.done {
+    background-color: white;
+    color: black;
+    border: thin solid black;
+}
+
+.done .check,
+.done .trash {
+    fill: black !important;
+}
+
+.work-subWorks {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.work-subWorks>div {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.work-subWorks>div>p {
+    position: relative;
+    bottom: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}

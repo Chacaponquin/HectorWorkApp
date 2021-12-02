@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hector WorkApp</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+    <div class="navBar">
+        <p>Hector WorkApp</p>
+        <div>
+            <input type="button" value="Nueva Tarea" class="showCard-button">
+
+            <div class="addWork-card">
+                <form>
+                    <p>Tarea</p>
+                    <input type="text" class="workName" required spellcheck="false">
+                    <p>Dia</p>
+                    <input type="date" class="day" required>
+                    <p>Descripcion</p>
+                    <textarea rows="4" spellcheck="false" class="description" required></textarea>
+                    <div class="subWork-button">Añadir Sub-Tarea</div>
+                    <div class="subWorks-container"></div>
+
+                    <input type="submit" value="Crear" class="formSubmit" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="works-container">
+
+    </div>
+
+
+    <script src="./ui/app.js" type="text/javascript"></script>
+    <script src="./ui/work.js"></script>
+    <script src="./ui/notifications.js"></script>
+</body>
+
+</html>

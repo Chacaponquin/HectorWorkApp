@@ -1,0 +1,16 @@
+{
+    "name": "hector_work_app",
+    "version": "1.0.0",
+    "description": "Una aplicacion de escritorio desarrollada en electron para poder organizar tareas",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "electron": "^15.3.1",
+        "nedb": "^1.8.0"
+    }
+}
